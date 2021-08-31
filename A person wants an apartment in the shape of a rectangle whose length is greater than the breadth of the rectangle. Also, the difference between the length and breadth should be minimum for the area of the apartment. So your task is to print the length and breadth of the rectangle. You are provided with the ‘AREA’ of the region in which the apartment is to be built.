@@ -1,0 +1,24 @@
+def area(n):
+    ll1=[]
+    ll2=[]
+    ll3=[]
+    min=99999
+    for i in range(0,n+1):
+        for j in range(0,n+1):
+            if(i*j==n):
+                ll1.append(i)
+                ll1.append(j)
+                ll2.append(ll1)
+                ll1=[]
+    
+        
+    for l,b in ll2:
+        
+        if(l>=b and l-b<min):
+            min=l-b
+            ll3.append(l)
+            ll3.append(b)
+    for i in ll3:
+        print(i,end=" ")
+             
+area(int(input())   #input given by user
