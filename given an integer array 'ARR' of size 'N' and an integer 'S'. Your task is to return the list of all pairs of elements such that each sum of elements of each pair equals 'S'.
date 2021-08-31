@@ -1,0 +1,20 @@
+import array as arra
+def pairSum(arr, s):
+    ll=list(arr)
+    l2=[]
+    l3=[]
+    for i in range(0,len(ll)):
+        l2=[]
+        for j in range(i+1,len(ll)):
+            if((ll[i]+ll[j])==s):
+                l2.append(ll[i])
+                l2.append(ll[j])
+                l3.append(l2)
+                l2=[]
+                break
+    for i in l3:
+        l3.sort()
+    for i in l3:
+        print(*i,sep=" ")
+arr = arra.array('i', [1, 2, 3,4,5])
+pairSum(arr,5)  # here s=5
