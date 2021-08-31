@@ -1,0 +1,24 @@
+def checkcheck():
+    if (check=="0"):
+        count=-1
+        for i in range(0,len(list1)):
+            if(count==-1 and list1[i]=="0"):
+                count=-1
+            else:
+                count=999
+                list2.append(list1[i])
+        print(list2)
+        
+ 
+x=12345  #input given by user
+x=str(x)
+list1=list(x)
+list2=[]
+list1.reverse()
+check=list1[0]
+count=999
+if(check=="0"):
+    checkcheck()
+else:
+    
+    print(list1)
