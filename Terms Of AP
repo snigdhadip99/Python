@@ -1,0 +1,12 @@
+def termsOfAP(x):
+    count=0
+    for i in range(0,1000):
+        if(count!=x):
+            xx=3*i+2
+            if(xx<4 and 4%xx != 0):
+                count+=1
+                print(xx)
+            if(xx>4 and xx%4 != 0):
+                count+=1
+                print(xx)
+termsOfAP(8)       # here number of terms : 8
