@@ -1,0 +1,17 @@
+xx=1009000   #input given by user
+xx=str(xx)
+length=len(xx)
+check=xx[len(xx)-1]
+count2=0
+if(check=="0"):
+    count=-1
+    count2=count2 + 1
+    
+    for i in range(length-2,0,-1):
+        if(count==-1 and xx[i]=="0"):
+            count2=count2+1
+            count=-1
+            
+        else:
+            break
+print(count2)
