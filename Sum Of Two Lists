@@ -1,0 +1,20 @@
+# both the lists were supplied by me. You can take them as inputs from the user.
+list1=[1,2,3]  #List1
+list2=[9,9]    #List2
+n1=int(len(list1))
+n2=int(len(list2))
+sum1=0
+sum2=0
+for i in list1:
+    
+    x=10 ** (n1-1)
+    i=i*x
+    sum1=sum1+i
+    n1=n1-1
+for i in list2:
+    x=10 ** (n2-1)
+    i=i*x
+    sum2=sum2+i
+    n2=n2-1
+sum=sum1+sum2
+print(sum)
