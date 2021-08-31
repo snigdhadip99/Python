@@ -1,0 +1,9 @@
+list1=[4,8,12]      #input given by user
+l2=[]
+for i in list1:
+    xx=int(i)//4
+    if(xx==0):
+        l2.append(-1)
+    else:
+        l2.append(xx)
+print(*l2)
