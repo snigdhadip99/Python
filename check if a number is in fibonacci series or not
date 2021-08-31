@@ -1,0 +1,11 @@
+import math
+def isfibo(n):
+    return isPerf(5*n*n+4) or isPerf(5*n*n-4)
+def isPerf(x):
+    s=int( math.sqrt(x) )
+    return x==s*s
+for i in range(2,11):   #range given by user
+    if(isfibo(i)):
+        print("the number is {} in fibonacci".format(i))
+    else:
+        print("{} is not in fibonacci".format(i))
