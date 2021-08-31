@@ -1,0 +1,14 @@
+def rotatearray(arr,n):
+    l2=[]
+    l3=[]
+    for i in range(0,n):
+        l2.append(arr[i])
+    for i in range(n,len(arr)):
+        l3.append(arr[i])
+    for i in range(0,len(l2)):
+        l3.append(l2[i])
+    for i in l3:
+        print(i)
+arr=[7,5,2,11,2,43,1,1]
+rotatearray(arr,2)  # here k is 2
+        
