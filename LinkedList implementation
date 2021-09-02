@@ -1,0 +1,59 @@
+class Node:
+    def __init__(self,data=None,link=None):
+        self.data=data
+        self.link=link
+class LinkedList:
+    def __init__(self):
+        self.head=None
+    def insert_at_beginning(self,data):
+        newnode=Node(data,self.head)
+        self.head=newnode
+    def insert_at_end(self,data):
+        if(self.head is None):
+            self.insert_at_beginning(data)
+        else:
+            ptr=self.head
+            while(ptr.link):
+                ptr=ptr.link
+            ptr.link=Node(data,None)
+    def insert_at_any_pos(self,index,data):
+        if(index==0):
+            self.insert_at_beginning(data)
+        else:
+            count=0
+            ptr=self.head
+            while(ptr):
+                if(count==index-1):
+                    newnode=Node(data,ptr.link)
+                    ptr.link=newnode
+                    break
+                ptr=ptr.link
+                count+=1
+    def delete_node(self,index):
+        count=0
+        ptr=self.head
+        if(index==0):
+            self.head=self.head.link
+        else:
+            while(ptr):
+                if(count==index-1):
+                    ptr.link=ptr.link.link
+                    break
+                ptr=ptr.link
+                count+=1
+    def print_nodes(self):
+        ptr=self.head
+        while(ptr):
+            print(ptr.data,"-->",end=" ")
+            ptr=ptr.link
+ll=LinkedList()
+ll.insert_at_beginning(10)    
+ll.insert_at_beginning(20)
+ll.insert_at_any_pos(1,30)
+ll.insert_at_end(1000)
+ll.delete_node(2)
+ll.print_nodes()
+
+#output : 20 --> 30 --> 1000 --> 
+            
+            
