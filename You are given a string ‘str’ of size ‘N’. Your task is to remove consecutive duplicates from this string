@@ -1,0 +1,5 @@
+from collections import Counter
+strr="aazbbby"               #self given input
+strr=Counter(strr)
+for i in strr.keys():
+    print(i,end="")
