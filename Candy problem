@@ -1,6 +1,6 @@
 first_kid_mint=int(input())
 length_of_queue=int(input())
-sum=xx
-for i in range(0,no-1):
+sum=first_kid_mint
+for i in range(0,length_of_queue-1):
     sum=(sum+sum)-1
 print(sum)
