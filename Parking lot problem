@@ -1,0 +1,12 @@
+list1=[[0, 1, 0],[ 1, 1, 0 ],[1, 0, 1],[ 1, 1, 1]]   #the value of matrix is given by me
+count=0
+max=0
+loc=0
+for i in range(4):
+    for j in range(3):
+        if(list1[i][j]==1):
+            count=count+1
+    if(count>max):
+        max=count
+        loc=i
+print(loc+1)
