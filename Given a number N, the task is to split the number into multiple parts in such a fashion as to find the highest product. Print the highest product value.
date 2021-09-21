@@ -1,0 +1,28 @@
+N=int(input())   #input given by user
+l1=[]
+xx=N % 2
+if(xx==0 and N==2):
+    print("2")
+if(xx==0 and N==3):
+    print("3")
+if(xx==0):
+    y=N//2
+    num=2**y
+    l1.append(num)
+if(xx!=0):
+    y=N//2
+    num=(2**y)*xx
+    l1.append(num)
+xx=N%3
+if(xx==0):
+    y=N//3
+    num=3**y
+    l1.append(num)
+if(xx!=0):
+    y=N//3
+    num=(3**y)*xx
+    l1.append(num)
+if(N==2 or N==3):
+    pass
+else:
+    print(max(l1))
