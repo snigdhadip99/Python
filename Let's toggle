@@ -1,0 +1,14 @@
+n=10     #input given by me 
+list1=[]
+while(n>0):
+    list1.append(n%2)
+    n=n//2
+list1.reverse()
+for i in range(len(list1)):
+    if(list1[i]==0):
+        list1[i]=1
+    else:
+        list1[i]=0
+xx=[str(i) for i in list1]
+xx=''.join(xx)
+print(int(xx,2))
