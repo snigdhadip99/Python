@@ -1,0 +1,17 @@
+string="011111010"  #input given by me
+ll=[]
+count=0
+for i in range(0,len(string)-1):
+    ll=[]
+    if(string[i]=="0" and string[i+1]=="1"):
+        ll.append(string[i])
+        j=i+1  
+        while(string[j]!="0" and j<=len(string)-2):
+            ll.append(string[j])
+            j=j+1
+        ll.append(string[j])
+        if(ll[0]=="0" and ll[len(ll)-1]=="0"):
+            count+=1
+                
+                
+print(count)
