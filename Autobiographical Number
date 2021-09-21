@@ -1,0 +1,12 @@
+string="12108"  #input given by me
+list1=list(map(int,string))
+for i in range(0,len(list1)):
+    if list1[i]==list1.count(i):
+        xx=1
+    else:
+        print("0")
+        xx=0
+        break
+if(xx==1):
+    list1=set(list1)
+    print(len(list1))
