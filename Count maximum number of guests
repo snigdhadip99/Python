@@ -1,0 +1,11 @@
+list1=[3,5,2,0]   # E[]
+list2=[0,2,4,4]   # L[]
+list3=[]
+count=0
+for i in range(0,len(list1)):
+    count=count+(list1[i]-list2[i])
+    list3.append(count)
+print(max(list3))
+
+
+# Output is 6
